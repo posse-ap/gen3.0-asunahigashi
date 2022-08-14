@@ -1,0 +1,8 @@
+<div><img></div>
+↑border-radius
+
+＋overflow:hidden
+⇒<div><img></div>
+　　↑　↑
+border-radius
+親要素のはみ出た部分を消す

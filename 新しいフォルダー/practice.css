@@ -1,0 +1,9 @@
+.color{
+  background-color: blue;
+  display: inline-block;
+}
+
+.blue-image{
+  opacity:0.3;
+  display:block;
+}

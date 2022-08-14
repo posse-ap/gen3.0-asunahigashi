@@ -1,0 +1,150 @@
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  height: 10%;
+}
+
+.logo{
+  margin-left: 24px;
+}
+
+.header-right{
+  display: flex;
+}
+
+.header-p{
+  margin-right: 32px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.1em;
+  color: #666666;
+}
+
+.back{
+  width: 1005;
+  height: 357px;
+  margin-top: 80px;
+} 
+
+.sec1{
+  position: absolute;
+  width: 479px;
+  height: 133px;
+  top: 111px;
+  bottom: 76px;
+  left: 204px;
+  right: 757px;
+}
+
+.sec1-top{
+  width: 96px;
+  height: 32px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  color: #EFF2F5;
+}  
+
+.sec1-under{
+  width: 236px;
+  height: 90px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-top: 12px;
+}
+
+.question{
+  width: 53px;
+  height: 54px;
+  background: #0071BC;
+  border-radius: 8px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 8px 16px;
+}
+
+.sec2{
+  position: relative;
+  top: 120px;
+  left: 228px;
+  right: 228px;
+}
+.q-bunn{
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  text-align: justify;
+  color: #333333;
+}
+
+.q-picture{
+  width: 718px;
+  height: 357px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  margin-left: 133px;
+  margin-right: 133px;
+}
+
+.answer{
+  width: 26px;
+  height: 53px;
+  background: #E34E70;
+  border-radius: 8px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 8px 16px;
+}
+
+.answer-inner{
+  display: flex;
+  justify-content: left;
+  gap: 24px;
+}
+
+.answer-main{
+  width: 312px;
+  /* height: 80px; */
+  list-style-type: none;
+  background: #FFFFFF;
+  border: 5px solid #EEEEEE;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  color: #333333;
+  padding: 24px 24px 24px 48px;
+}
