@@ -1,0 +1,11 @@
+
+
+.img-inner{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px aquamarine solid;
+    /* position: absolute; */
+    /* top: 10px; */
+    /* left: 10px; */
+}

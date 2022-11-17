@@ -1,0 +1,11 @@
+.square-button {
+    width: 80px;
+    height: 80px;
+    background: #232323;
+    list-style-type: none;
+}
+
+.square-button.blue {
+    background: #21759b;
+}
+
