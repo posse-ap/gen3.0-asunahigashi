@@ -1,0 +1,80 @@
+main{
+    height: 80vh;
+}
+
+main > div,main > div > div{
+    /*親要素の高さ引継ぎ*/
+    height: 100%;
+} 
+
+.main-body{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+.main-body > div{
+    width: 50%;
+
+}
+
+/*左側*/
+
+.main-body_hour{
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+
+
+
+.main-body_hour_number{
+    display: flex;
+    height: 20%;
+    justify-content: space-between;
+}
+
+.main-body_hour_number > div{
+    background-color: #fff;
+    width: 30%;
+    height: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-body_hour_number > div>h2{
+    margin: 12px 0;
+}
+
+.main-body_hour_number > div>h3{
+    color: blue;
+}
+
+
+.main-body_hour_number > div>h4{
+    color: rgb(0, 89, 255);
+}
+
+.main-body_hour_bar{
+    background-color: #fff;
+    height: 80%;
+    border-radius: 12px;
+}
+
+
+/*右側*/
+.main-body_donut{
+    display: flex;
+    gap: 20px;
+}
+
+.main-body_donut > div{
+    width: 50%;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+}

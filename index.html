@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webapp</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="header-body">
+            <div class="header-body_logo">
+                <img src="./img/logo.svg" alt="" class="header-logo">
+                <h3>4th week</h3>
+            </div>
+            <button class="header-body_button">記録・投稿</button>
+        </div>
+    </header>
+    <main>
+    <div class="main-body">
+        <div class="main-body_hour">
+            <div class="main-body_hour_number">
+                <div class="main-body_hour_number_today">
+                    <h3>today</h3>
+                    <h2>3</h2>
+                    <h4>hour</h4>
+                </div>
+                <div class="main-body_hour_number_month">
+                    <h3>month</h3>
+                    <h2>120</h2>
+                    <h4>hour</h4>
+                </div>
+                <div class="main-body_hour_number_total">
+                    <h3>total</h3>
+                    <h2>1348</h2>
+                    <h4>hour</h4>
+                </div>
+            </div>
+            <div class="main-body_hour_bar"></div>
+        </div>
+        <div class="main-body_donut">
+            <div class="main-body_hour_donut_language">
+                <h3>学習言語</h3>
+            </div>
+            <div class="main-body_hour_donut_contents">
+                <h3>学習コンテンツ</h3>
+            </div>
+        </div>
+    </div>
+    </main>
+    <div class="modal">
+        <div class="modal-close"><img src="./img/00D7-300x300(4).png" alt=""></div>
+        <div class="modal-body">
+            <div class="modal-body_learning">
+                <div class="modal-body_learning_date">
+                    <h4>学習日</h4>
+                    <input type="date">
+                </div>
+                <div class="modal-body_learning_contents">
+                    <h4>学習コンテンツ(複数選択可)</h4>
+                    <label>
+                        <input type="checkbox" class="modal-body_learning_checkbox" />
+                        <span class="modal-body_learning_checkbox_span">N予備校</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="modal-body_learning_checkbox" />
+                        <span class="modal-body_learning_checkbox_span">ドットインストール</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="modal-body_learning_checkbox" />
+                        <span class="modal-body_learning_checkbox_span">POSSE課題</span>
+                    </label>
+                </div>
+                <div class="modal-body_learning_language">
+                    <h4>学種言語(複数選択可)</h4>
+                    <label>
+                        <input type="checkbox" class="modal-body_learning_checkbox" />
+                        <span class="modal-body_learning_checkbox_span">HTML</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="modal-body_learning_checkbox" />
+                        <span class="modal-body_learning_checkbox_span">CSS</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="modal-body_learning_checkbox" />
+                        <span class="modal-body_learning_checkbox_span">JavaScript</span>
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" class="modal-body_learning_checkbox" />
+                        <span class="modal-body_learning_checkbox_span">PHP</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="modal-body_learning_checkbox" />
+                        <span class="modal-body_learning_checkbox_span">Laravel</span>
+                    </label><label>
+                        <input type="checkbox" class="modal-body_learning_checkbox" />
+                        <span class="modal-body_learning_checkbox_span">SQL</span>
+                    </label><label>
+                        <input type="checkbox" class="modal-body_learning_checkbox" />
+                        <span class="modal-body_learning_checkbox_span">SHELL</span>
+                    </label>
+
+                    <!-- <label>
+                        <input type="checkbox" class="modal-body_learning_checkbox" />
+                        <span class="modal-body_learning_checkbox_span">情報システム基礎機能(その他)</span>
+                    </label> -->
+                </div>
+            </div>
+            <div class="modal-body_comment">
+                <div class="modal-body_comment_hour">
+                    <h4>学種時間</h4>
+                    <input type="number">
+                </div>
+                <div class="modal-body_comment_twitter">
+                    <h4>twitterコメント</h4>
+                    <textarea></textarea>
+                    <label>
+                    <input type="checkbox" class="modal-body_learning_checkbox" />
+                    <span class="modal-body_learning_checkbox_span">twitterにシェアする</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-button"><button>記録・投稿</button></div>
+        <div class="loader">Loading...</div>
+        <div class="modal-check"><img src="./img/checkbox.jpeg" ></div>
+        </div>
+    </div>
+    <div class="filter"></div>
+    <script src="./script/script.js"></script>
+</body>
+</html>

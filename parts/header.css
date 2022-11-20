@@ -1,0 +1,31 @@
+header{
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.header-body{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-body_logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-body_logo h3{
+    color: blueviolet;
+}
+
+
+.header-body_button{
+    background-image: linear-gradient(to right, green,blue);
+    color: white;
+    padding: 12px 40px;
+    border-radius: 12px;
+    border: none;
+}
+
+.
