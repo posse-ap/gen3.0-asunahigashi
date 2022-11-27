@@ -1,5 +1,8 @@
 @media screen and ( max-width:479px )
 {
+  .header > div{
+    max-width: 100vw;
+  }
     .header-body{
         width: 100%;
         height: 20%;
