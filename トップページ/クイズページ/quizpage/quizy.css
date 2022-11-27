@@ -1,0 +1,496 @@
+/* START HEADER */
+.header{
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  padding: 5px 24px;
+  justify-content: space-between;
+}
+
+/* pc版 */
+.header-logo{
+  width: 148px;
+  padding: 0;
+}
+.ham-container{
+  position: absolute;
+  right: 0;
+
+}
+.p-header-nav-list{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.p-header-nav-list li{
+  font-size: 14px;
+  font-family: 'Noto Sans JP';
+  font-weight: bold;
+  color: #6666;
+}
+.header-sns{
+  display: flex;
+  gap: 16px;
+}
+.header-sns a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #EEEE;
+}
+
+.header_official{
+  display: none;
+}
+.header-official-link-website{
+  display: none;
+}
+.header-sns{
+  display: none;
+}
+/* ハンバーガーメニュー */
+@media screen and (max-width: 768px) {
+
+  .header-logo{
+    width: 120px;
+  }
+
+  .p-header-nav-list{
+    display: none;
+  }
+
+  .active.header .header-inner {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      margin-top: 38px;
+      inset: 0;
+      opacity: 0;
+      padding: 76px 0px;
+      position: fixed;
+      transition: opacity 0.4s, visibility 0.4s;
+      visibility: hidden; 
+    }
+  .active.header .header-inner{ 
+    opacity: 1;
+    visibility: visible;
+  }
+  .ham-li{
+    margin-bottom: 24px;
+  }
+.p-header-nav-item-link{
+  font-size: 24px;
+  font-weight: 700;
+}
+.header_official{
+  background-color: #5FDF5B;
+  color: #fff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 330px auto 0 auto;
+  width: 343px;
+  height: 60px;
+}
+.official-site{
+  margin-top: 24px;
+}
+.header-sns{
+  margin-top: 20px;
+  justify-content: center;
+}
+.inner-line-icon{
+  background: radial-gradient(#fff 60%, transparent 60%);
+}
+  .header-inner{
+    text-align: center;
+  }
+  .inner-line-icon{
+    width: 40px;
+    height: 40px;
+  }
+  .header-button{
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 38px;
+    background: #fff;
+  }
+
+  .header-button span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 13px;
+    height: 2px;
+    background-color: #666;
+  }
+  .is-open{
+    display: block;
+  }
+  .header-button span:nth-of-type(1) {
+    top:22px; 
+      width: 50%;
+  }
+  
+  .header-button span:nth-of-type(2) {
+    top:29px;
+      width:50%;
+  }
+.is-open span:nth-of-type(1){
+    top: 20px;
+    left: 16px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 35%;
+  }
+.is-open span:nth-of-type(2) {
+    top: 32px;
+    left: 16px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 35%;
+}
+
+
+}
+
+/* END HEADER
+-----------------------*/
+
+
+/*hero*/
+.hero-body{
+  position: relative;
+  width: 100%;
+  height: 20%;
+}
+
+.hero-body_back{
+  width: 100%;
+  margin-top: 48px;
+} 
+
+.hero-body_text{
+  position: absolute;
+  top: 60%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-body_text_main{
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  color: #EFF2F5; 
+}  
+
+
+.hero-body_text_sub{
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-top: 12px; 
+}
+
+/*questions*/
+
+.quiz-section{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 60px;
+}
+
+.quiz-body_question{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.quiz-body_question_number{
+  background: #0071BC;
+  width: 8vw;
+  height: 16vh;
+  border-radius: 8px;
+}
+
+.quiz-body_question_number_text{
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 20px;
+}
+
+/* .sec2{
+  position: relative;
+  top: 120px;
+  left: 228px;
+  right: 228px;
+} */
+
+
+.quiz-body_question_text{
+  position: absolute;
+  width: 80vw;
+  height: 50vh;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  text-align: justify;
+  color: #333333;
+}
+
+.quiz-body_question_img{
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  margin: 250px 200px;
+}
+
+
+/*answer*/
+.quiz-body_answer{
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+  margin-top: 100px;
+
+}
+
+.quiz-body_answer_number{
+  background: #E34E70;
+  width: 8vw;
+  height: 16vh;
+  border-radius: 8px;
+}
+
+.quiz-body_answer_number_text{
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 24px 36px;
+}
+
+.quiz-body_answer_about{
+  display: flex;
+  gap: 12px;
+  width: 92vw;
+  height: 16vh;
+}
+
+.answer-button{
+  width: 26px;
+  height: 53px;
+  border: none;
+  border-radius: 10px;
+}
+
+
+.button{ 
+  width: 24vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  background: #FFFFFF;
+  border: 5px solid #EEEEEE;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.answer{
+  list-style-type: none;
+  background: #FFFFFF;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  color: #333333;
+  padding: 0 16px; 
+}
+
+
+
+.answer-main{
+  background-color: gray;
+  width: 984px;
+  height: 143px;
+}
+
+.hidden{
+  display: none;
+}
+
+.quiz-box-inner{
+  background-color: #666666;
+  width: 1200px;
+  height: 100px;
+}
+
+.answer_box{
+  position: relative;
+    width: 74vw;
+    height: 24vh;
+    left: 40px;
+}
+
+.note-container{
+  position: relative;
+  width: 984px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background-color: #F6F6F6;
+  border-radius: 8px;
+}
+
+.quiz-body_note{
+  position: relative;
+  width: 100vw;
+  height: 20vh;
+  left: 40px;
+}
+
+
+.quiz-body_note_text{
+  position: absolute;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  color: #333333;
+}
+
+
+
+/*note*/
+.js-note-box{
+  position: relative;
+  width: 80vw;
+  height: 24vh;
+}
+
+
+.quiz-body_note{
+  position: relative;
+  width: 74vw;
+  height: 12vh;
+  background-color: #80808017;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+
+.disappear{
+  display:none;
+}
+
+.answer-box-text{
+  color: #EEEEEE;
+}
+
+
+.js-selected{
+  border: 5px solid #0071BC;
+  border-radius: 8px; 
+}
+
+.correct-container{
+  background-color: #e34e7038;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.correct-css{
+  position: absolute;
+  height: 36px;
+  left: 40px;
+  top: 24px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: #E34E70;
+}
+
+.iscorrect-container{
+  background-color: #0071bc2b;;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.iscorrect-css{
+  position: absolute;
+  height: 36px;
+  left: 40px;
+  top: 24px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: #0071BC;
+}
+
+.correct-note{
+  position: absolute;
+  margin: 80px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  color: #333333;
+}
+
+.correct-note-add{
+  position: absolute;
+  margin: 80px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}

@@ -1,0 +1,265 @@
+@media screen and ( max-width:479px )
+{
+    .header-body{
+        width: 100%;
+        height: 20%;
+    }
+    
+    .header-body_about{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        z-index: 10;
+        height: 12vw;
+    }
+    
+    .header-body_logo{
+        margin-left: 4vw;
+        width: 40vw;
+    }
+    
+    .header-body_link{
+        display: none;
+        width: 24vw;
+    }
+    
+    .header-body_link_contain{
+        margin-right: 32px;
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.75em;
+        line-height: 160%;
+        letter-spacing: 0.1em;
+        color: #666666;
+    }
+
+    .hero-body{
+        position: relative;
+        width: 130vw;
+        height: 30%;
+    }
+    
+    .hero-body_back{
+        width: 100%;
+        height: 34vh;
+        margin-top: 48px;
+    } 
+    
+    .hero-body_text{
+        position: absolute;
+        top: 70%;
+        left: 36%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .hero-body_text_main{
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 180%;
+        color: #EFF2F5; 
+    }  
+    
+    
+    .hero-body_text_sub{
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin-top: 12px; 
+    }
+
+/*questions*/
+
+.quiz-section{
+    position: relative;
+    width: 126vw;
+    padding: 0 4px;
+  }
+  
+  .quiz-body_question{
+    position: relative;
+    width: 100%;
+  }
+  
+  .quiz-body_question_number{
+    background: #0071BC;
+    width: 22vw;
+    height: 12vh;
+    border-radius: 8px;
+  }
+  
+  .quiz-body_question_number_text{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 12px;
+  }
+  
+  .quiz-body_question_text{
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 150%;
+    text-align: justify;
+    color: #333333;
+    width: 100%;
+  }
+  
+  .quiz-body_question_img{
+    width: 80%;
+    position: absolute;
+    top: 36%;
+    left: 4%;
+    transform: translate(-50%, -50%); 
+    height: 357px;
+    /* margin-top: 64px;
+    margin-bottom: 64px;
+    margin-left: 133px;
+    margin-right: 133px;  */
+  }
+  
+  /*answer*/
+.quiz-body_answer{
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+  margin-top: 90px;
+  margin-bottom: 130px;
+}
+
+.quiz-body_answer_number{
+  background: #E34E70;
+  width: 22vw;
+  height: 12vh;
+  border-radius: 8px;
+}
+
+.quiz-body_answer_number_text{
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #FFFFFF;
+  flex: none;
+  padding: 14px 24px
+}
+
+.quiz-body_answer_about{
+  display: block;
+  gap: 12px;
+  width: 92vw;
+  height: 16vh;
+}
+
+.answer-button{
+  width: 26px;
+  height: 53px;
+  border: none;
+  border-radius: 10px;
+}
+
+
+.button{ 
+  width: 106vw;
+  height: 12vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  background: #FFFFFF;
+  border: 5px solid #EEEEEE;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.answer{
+  list-style-type: none;
+  background: #FFFFFF;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  color: #333333;
+  padding: 0 16px; 
+}
+
+
+
+.answer-main{
+  background-color: gray;
+  width: 984px;
+  height: 143px;
+}
+
+.hidden{
+  display: none;
+}
+
+.quiz-box-inner{
+  background-color: #666666;
+  width: 1200px;
+  height: 100px;
+}
+
+.answer_box{
+  position: relative;
+  width: 106vw;
+    height: 24vh;
+    left: 40px;
+}
+
+.note-container{
+  position: relative;
+  width: 984px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background-color: #F6F6F6;
+  border-radius: 8px;
+}
+
+.quiz-body_note{
+  position: relative;
+  width: 106vw;
+  height: 15vh;
+  left: 40px;
+}
+
+
+.quiz-body_note_text{
+  position: absolute;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  color: #333333;
+}
+
+
+      
+
+}
