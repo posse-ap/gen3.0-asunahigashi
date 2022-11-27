@@ -179,7 +179,7 @@
 
 
 .button{ 
-  width: 106vw;
+  width: 90vw;
   height: 12vh;
   box-sizing: border-box;
   display: flex;
@@ -229,7 +229,7 @@
 
 .answer_box{
   position: relative;
-  width: 106vw;
+  width: 90vw;
     height: 24vh;
     left: 40px;
 }
@@ -246,7 +246,7 @@
 
 .quiz-body_note{
   position: relative;
-  width: 106vw;
+  width: 90vw;
   height: 15vh;
   left: 40px;
 }
@@ -262,7 +262,36 @@
   color: #333333;
 }
 
+.footerinner{
+  position: relative;
+  width: 100vw;
+  top: 3%;
+  bottom: 10%;
+}
 
+
+.footer-top{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-next{
+  display: flex;
+  justify-content: center;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 500%;
+  text-align: center;
+  color: #666666;
+}
+
+.footer-icon{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
       
 
 }
