@@ -15,8 +15,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     background-color: #fff;
     border-radius: 20px;
     z-index: 3;
@@ -68,8 +68,8 @@
 .modal-body_learning label{
     display: inline-block;
     background-color: #ccc;
-    margin: 8px;
-    padding: 8px;
+    margin: 4px;
+    padding: 0 8px;
     border-radius: 8px;
 }
 

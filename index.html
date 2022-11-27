@@ -7,6 +7,7 @@
     <title>Webapp</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./breakpoint/Responsive.css">
 </head>
 <body>
     <header>
@@ -38,17 +39,20 @@
                     <h4>hour</h4>
                 </div>
             </div>
-            <div class="main-body_hour_bar"></div>
+            <div class="main-body_hour_bar"><canvas id="time-log-chart" class="bar_canvas"></canvas></div>
         </div>
         <div class="main-body_donut">
             <div class="main-body_hour_donut_language">
                 <h3>学習言語</h3>
+                <canvas id="languages-chart"></canvas>
             </div>
             <div class="main-body_hour_donut_contents">
                 <h3>学習コンテンツ</h3>
+                <canvas id="contents-chart" ></canvas>
             </div>
         </div>
     </div>
+    <div class="days">2022年　10月</div>
     </main>
     <div class="modal">
         <div class="modal-close"><img src="./img/00D7-300x300(4).png" alt=""></div>
@@ -111,14 +115,14 @@
             </div>
             <div class="modal-body_comment">
                 <div class="modal-body_comment_hour">
-                    <h4>学種時間</h4>
+                    <h4>学習時間</h4>
                     <input type="number">
                 </div>
                 <div class="modal-body_comment_twitter">
                     <h4>twitterコメント</h4>
-                    <textarea></textarea>
+                    <textarea class="modal-body_comment_text"></textarea>
                     <label>
-                    <input type="checkbox" class="modal-body_learning_checkbox" />
+                    <input type="checkbox" class="modal-body_twitter_checkbox" checked />
                     <span class="modal-body_learning_checkbox_span">twitterにシェアする</span>
                     </label>
                 </div>
@@ -130,6 +134,9 @@
         </div>
     </div>
     <div class="filter"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- chartjs-plugin-datalabels------------------------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.1.0"></script>
     <script src="./script/script.js"></script>
 </body>
 </html>

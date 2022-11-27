@@ -1,0 +1,284 @@
+
+@media screen and ( max-width:479px ){
+    header{
+        background-color: #fff;
+        margin-bottom: 20px;
+    }
+    
+    .header-body{
+        display: block;
+        justify-content: space-between;
+        padding: 12px;
+    }
+    
+    .header-body_logo{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .header-body_logo h3{
+        color: blueviolet;
+    }
+    
+    
+    .header-body_button{
+        background-image: linear-gradient(to right, green,blue);
+        color: white;
+        padding: 12px 40px;
+        border-radius: 12px;
+        border: none;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    main{
+        height: 80vh;
+    }
+    
+    main > div,main > div > div{
+        /*親要素の高さ引継ぎ*/
+        height: 100%;
+    } 
+    
+    .main-body{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        gap: 20px;
+    }
+    
+    .main-body > div{
+        width: 100%;    
+    }
+    
+    /*左側*/
+    
+    .main-body_hour{
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+        height: 50vh;
+    }
+    
+    
+    
+    .main-body_hour_number{
+        display: flex;
+        height: 16vh;
+        justify-content: space-around;
+        margin: 0 8px;
+    }
+    
+    .main-body_hour_number > div{
+        background-color: #fff;
+        width: 30%;
+        height: 100%;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-body_hour_number > div>h2{
+        margin: 0px 0;
+    }
+    
+    .main-body_hour_number > div>h3{
+        color: blue;
+    }
+    
+    
+    .main-body_hour_number > div>h4{
+        color: rgb(0, 89, 255);
+    }
+    
+    .main-body_hour_bar{
+        background-color: #fff;
+        height: 26vh;
+        border-radius: 12px;
+        margin: 12px;
+    }
+    
+    
+    /*右側*/
+    .main-body_donut{
+        display: flex;
+        gap: 16px;
+        height: 50vh;
+        padding: 12px;
+    }
+    
+    .main-body_donut > div{
+        width: 50%;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 20px;
+    }
+    
+    #canvas{
+        width: 240px;
+        height: 200px;
+    }
+
+
+    /*modal*/
+
+    
+    .filter{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        opacity: 0.4;
+        z-index: 2;
+        /* display: none; */
+    }
+    
+    .modal{
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 90%;
+        background-color: #fff;
+        border-radius: 20px;
+        z-index: 3;
+        /* display: none; */
+    }
+    
+    .modal-close{
+        position: absolute;
+        top: 1%;
+        right: 3%;
+    }
+    .modal-close img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .modal-body{
+        padding: 20px;
+    }
+    
+    .modal-body >div{
+        width: 100%;
+    }
+    
+    .modal-body > div > div > input{
+        background-color: rgba(128, 128, 128, 0.368);
+        padding: 12px 20px;
+        margin: 20px 0;
+        width: 100%;
+        border: none;
+    }
+    
+    .modal-body textarea{
+        background-color: rgba(128, 128, 128, 0.368);
+        padding: 12px 20px;
+        margin: 20px 0;
+        width: 100%;
+    }
+    
+    
+    .modal-body_learning_checkbox{
+        vertical-align: middle;
+        font-size: 20px;
+    }
+    
+    .modal-body_learning label{
+        display: inline-block;
+        background-color: #ccc;
+        border-radius: 8px;
+    }
+    
+    .modal-button{
+        text-align: center;
+    }
+    
+    .modal-button button{
+        width: 50%;
+        background-image: linear-gradient(to right, green,blue);
+        color: white;
+        padding: 12px 40px;
+        border-radius: 12px;
+        border: none;
+    }
+    
+    .loader,
+    .loader:after {
+        border-radius: 50%;
+        width: 10em;
+        height: 10em;
+    }
+    .loader {
+        position: absolute;
+        top: 38%;
+        left: 44%;
+        transform: translateY(-50%) translateX(-50%);
+        margin: 60px auto;
+        font-size: 10px;
+        text-indent: -9999em;
+        border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+        border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+        border-left: 1.1em solid #000;
+        /* -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0); */
+        -webkit-animation: load8 1.1s infinite linear;
+        animation: load8 1.1s infinite linear;
+    }
+    @-webkit-keyframes load8 {
+        0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+        100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    
+    .modal-check{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100px;
+        height: 100px;
+        /* display: none; */
+    }
+    
+    .modal-check::before{
+        content: "AWESOME";
+        display: block;
+        text-align: center;
+    }
+    
+    .modal-check::after{
+        content: "記録投稿完了";
+        display: block;
+        text-align: center;
+    }
+
+    .days{
+        text-align: center;
+        margin-top: 185px;
+    }
+
+}
